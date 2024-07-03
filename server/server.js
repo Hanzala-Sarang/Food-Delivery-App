@@ -14,11 +14,17 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4500;
 
+// Define the allowed origins
+const allowedOrigins = [
+  "https://food-delivery-app-admin-panel.onrender.com",
+  "https://food-delivery-app-client-je3x.onrender.com",
+];
+
 // middlewares
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://food-delivery-app-client-je3x.onrender.com/",
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
