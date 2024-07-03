@@ -6,7 +6,7 @@ import Stripe from "stripe";
 
 const placeOrder = async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const client_url = "http://localhost:5174";
+  const client_url = "https://main--foodieway.netlify.app";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
