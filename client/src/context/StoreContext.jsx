@@ -9,7 +9,7 @@ const StoreContextProvider = ({ children }) => {
   const [user, setUser] = useState(
     JSON.parse(sessionStorage.getItem("user")) || null
   );
-  const url = "http://localhost:4500";
+  const url = "https://food-delivery-app-i3ep.onrender.com";
   const [token, setToken] = useState("");
   const [showLogin, setShowLogin] = useState(false);
   const [food_list, setFoodList] = useState([]);
