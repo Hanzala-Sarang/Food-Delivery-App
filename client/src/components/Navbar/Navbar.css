@@ -1,0 +1,118 @@
+:root {
+  --dark-slate-blue: #49557e;
+  --tomato-color: #ff6347;
+}
+
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: var(--dark-slate-blue);
+  font-size: 20px;
+}
+
+.navbar-menu a {
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: var(--dark-slate-blue);
+  border: 1px solid var(--tomato-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+  background-color: var(--tomato-color);
+  color: var(--dark-slate-blue);
+}
+
+.active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--dark-slate-blue);
+}
+
+.navbar-basket-icon {
+  position: relative;
+}
+
+.navbar-profile {
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-profile .p-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #49557e;
+}
+.navbar-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 10;
+  z-index: 1;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff2ef;
+  padding: 12px 25px;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+  list-style: none;
+}
+
+.navbar-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar-profile-dropdown li img {
+  width: 20px;
+}
+
+.navbar-profile-dropdown li:hover {
+  color: tomato;
+}
+.dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: var(--tomato-color);
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}

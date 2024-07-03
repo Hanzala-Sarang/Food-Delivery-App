@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4%;
+}
+
+.navbar .logo {
+  width: max(10%, 100px);
+}
