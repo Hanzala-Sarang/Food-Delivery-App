@@ -15,20 +15,10 @@ const app = express();
 const port = process.env.PORT || 4500;
 
 // Define the allowed origins
-const allowedOrigins = [
-  "https://food-delivery-app-admin-panel.onrender.com",
-  "https://food-delivery-app-client-9qj4.onrender.com",
-];
 
 // middlewares
 app.use(express.json());
-app.use(
-  cors({
-    origin: allowedOrigins,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+app.use(cors());
 connectDB();
 
 // api endpoint

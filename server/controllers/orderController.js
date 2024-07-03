@@ -6,7 +6,7 @@ import Stripe from "stripe";
 
 const placeOrder = async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const client_url = "https://food-delivery-app-client-je3x.onrender.com/";
+  const client_url = "https://food-delivery-app-client-9qj4.onrender.com";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
