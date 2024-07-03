@@ -17,7 +17,7 @@ const port = process.env.PORT || 4500;
 // Define the allowed origins
 const allowedOrigins = [
   "https://food-delivery-app-admin-panel.onrender.com",
-  "https://food-delivery-app-client-6oif.onrender.com",
+  "https://food-delivery-app-client-9qj4.onrender.com",
 ];
 
 // middlewares
